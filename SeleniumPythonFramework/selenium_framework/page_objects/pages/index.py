@@ -12,8 +12,7 @@ class Index():
         self.title_text = self.driver.title
         self.protein_options = self.driver.find_element_by_id("ProteinOptions")
         self.dropdown = drop_down.DropDown(self.driver, self.protein_options)
-        
-    
+            
     def click_link_step2(self):
         self.link_step2.click()
         return site.Step2(self.driver)
